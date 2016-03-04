@@ -1,0 +1,24 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "User Story App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-wong-9/LearningMEANStack.git"
+  },
+  "author": "Jason Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-wong-9/LearningMEANStack/issues"
+  },
+  "homepage": "https://github.com/jason-wong-9/LearningMEANStack#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  }
+}
