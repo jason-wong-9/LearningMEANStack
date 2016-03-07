@@ -18,6 +18,8 @@
         <script type="text/javascript" src="app/controllers/userCtrl.js"></script>
         <script type="text/javascript" src="app/controllers/storyCtrl.js"></script>        
         
+        <script type="text/javascript" src="app/directives/reverse.js"></script>     
+        
         <script type="text/javascript" src="app/app.routes.js"></script> 
         <script type="text/javascript" src="app/app.js"></script>
         
@@ -31,9 +33,6 @@
                         <a href="/#/" class="navbar-brand"><span class="glyphicon glyphicon-book"></span>User Story</a>
                         
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#/users"></a></li>
-                    </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
                         <li ng-if="!main.loggedIn"><a href="#/login">Login</a></li>
