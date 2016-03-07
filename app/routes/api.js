@@ -19,7 +19,7 @@ function createToken (user) {
     return token;
 }
 
-module.exports = function(app, express) {
+module.exports = function(app, express, io) {
     
     var api = express.Router();
     
@@ -110,11 +110,12 @@ module.exports = function(app, express) {
                 creator: req.decoded.id,
                 content: req.body.content,
             });  
-            story.save(function(err){
+            story.save(function(err, newStory){
                 if(err) {
                     res.send(err);
                     return;
                 }
+                io.emit('story', newStory)
                 res.json({ message: "New Story Created" });
             })
         })
